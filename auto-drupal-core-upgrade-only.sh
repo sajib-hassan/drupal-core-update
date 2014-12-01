@@ -8,7 +8,7 @@ Options:
   [-h | --help]             shows this usage message
 
 Example: 
-$0 -u 3.34"
+$0 -u 6.34"
 }
 
 strindex() { 
@@ -37,6 +37,7 @@ done
 if [ $has_version == "false" ]
 then
   echo "No drupal version detected"
+  usage
   exit 2
 fi
 
