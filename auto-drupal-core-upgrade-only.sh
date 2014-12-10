@@ -60,7 +60,7 @@ echo "- Prepare to remove core files"
 if [ $drupal_version_major == "6" ]; then
     rm -rf includes misc modules profiles/default scripts themes cron.php index.php update.php xmlrpc.php 
   else
-    rm -rf includes misc modules profiles/default scripts themes authorize.php cron.php index.php update.php web.config xmlrpc.php 
+    rm -rf includes misc modules profiles/default profiles/minimal profiles/standard profiles/testing scripts themes authorize.php cron.php index.php update.php web.config xmlrpc.php 
   fi
 
 echo "- Copy core files from drupal-$drupalversion"
